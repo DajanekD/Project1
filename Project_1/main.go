@@ -253,7 +253,7 @@ func SJFSchedule(w io.Writer, title string, processes []Process) {
 	outputSchedule(w, schedule, aveWait, aveTurnaround, aveThroughput)
 }
 
-// Round Robin scheduler
+// Round Robin Schedule - pre-emptive algorithm
 func RRSchedule(w io.Writer, title string, processes []Process) {
 	var (
 		serviceTime     int64
